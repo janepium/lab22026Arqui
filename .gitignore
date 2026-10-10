@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+.github/workflows/qodana_code_quality.yml
+
+qodana.yaml
