@@ -123,3 +123,14 @@ jobs:
           name: artifact
           # From this path (Asegúrate de que el nombre del JAR coincida con el generado en tu carpeta target)
           path: target/*.jar
+
+      # Build & push Docker image
+      - name: Build & push Docker image
+        uses: mr-smithers-excellent/docker-build-push@v6
+        with:
+          image: tu_usuario_dockerhub/lab2p2026
+          tags: latest
+          registry: docker.io
+          dockerfile: Dockerfile
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
