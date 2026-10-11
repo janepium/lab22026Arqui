@@ -122,4 +122,4 @@ jobs:
           # Set artifact name
           name: artifact
           # From this path (Asegúrate de que el nombre del JAR coincida con el generado en tu carpeta target)
-          path: target/lab2p2026-0.0.1-SNAPSHOT.jar
+          path: target/*.jar
